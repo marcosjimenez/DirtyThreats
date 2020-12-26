@@ -8,8 +8,8 @@ namespace DirtyThreats.IoC.Configuration.AutoMapper.Profiles
     {
         public APIMappingProfile()
         {
-            CreateMap<DC.User, S.User>().ReverseMap();
-            CreateMap<DC.Address, S.Address>().ReverseMap();
+            CreateMap<DC.UrlCheck, S.UrlCheck>().ReverseMap();
+            CreateMap<DC.CheckResult, S.CheckResult>().ReverseMap();
         }
     }
 }

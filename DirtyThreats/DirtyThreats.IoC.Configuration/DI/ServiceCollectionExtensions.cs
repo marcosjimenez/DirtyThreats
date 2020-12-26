@@ -13,7 +13,8 @@ namespace DirtyThreats.IoC.Configuration.DI
         {
             if (services != null)
             {
-                services.AddTransient<IUserService, UserService>();
+                services.AddTransient<IUrlCheckService, UrlCheckService>();
+                services.AddSingleton<IPluginService, PluginService>();
             }
         }
 
